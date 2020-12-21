@@ -1,0 +1,422 @@
+html body{
+    margin: 0;
+}
+
+body{
+    font-family: "Montserrat";
+    height: 100%;
+    background: #f4f4f2;
+}
+
+header{
+    position: relative;
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #03506f;
+
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 85%;
+        margin: 0;
+        padding: 0;
+        
+        li a{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            font-size: .7rem;
+            padding: 1em;
+            color: #f4f4f2;
+        }
+    }
+}
+
+.color{
+    color: rgb(255, 175, 83);
+}
+
+.landing{
+    padding: 3em;
+    text-align: center;
+    background: #03506f;
+    color: #f4f4f2;
+
+    h2{
+        margin: 0; 
+    }
+
+    p{
+        margin: 0;
+        font-size: .8rem;
+    }
+}
+
+.wrapper{
+    width: 100%;
+    background: #f4f4f2;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    h2{
+        color:#03506f;
+        margin: 0;
+    }
+
+    p{
+        color:#03506f;
+        margin: 0;
+    }
+
+    .main{
+        height: 100vh;
+        background: #f4f4f2;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        h2{
+            color:  #03506f;
+        }
+    
+        .ideas{
+            padding: .5em;
+            height: 30vh;
+            margin: 1em 0;
+            width: 100%;
+
+            h2{
+                font-size: 1.5rem;
+                padding: 0;
+            }
+
+            p{
+                font-size: .8rem;
+            }
+        }
+
+        .gym{
+            height: 100%;
+            width: 100%;
+            background: url("../images/gym.svg") no-repeat;
+            background-size: contain;
+            background-position: top;
+        }
+
+        .phone{
+            height: 100%;
+            width: 100%;
+            background: url("../images/phone.svg") no-repeat;
+            background-size: contain;
+            background-position: top;
+        }
+
+        .travel{
+            height: 100%;
+            width: 100%;
+            background: url("../images/travel.svg") no-repeat;
+            background-size: contain;
+            background-position: top;
+        }
+
+        .gift{
+            height: 100%;
+            width: 100%;
+            background: url("../images/gift.svg") no-repeat;
+            background-size: contain;
+            background-position: top;
+        }
+
+        .saving{
+            height: 100%;
+            width: 100%;
+            background: url("../images/saving.svg") no-repeat;
+            background-size: contain;
+            background-position: top;
+        }
+
+        .netflix{
+            height: 100%;
+            width: 100%;
+            background: url("../images/netflix.svg") no-repeat;
+            background-size: contain;
+            background-position: top;
+        }
+    }
+
+    .customer{
+        text-align: center;
+        background: #03506f;
+
+        h2{
+            color: #f4f4f2;
+            padding-top: 1em;
+        }
+
+        figure{
+            position: relative;
+            background: #f4f4f2;
+            display: block;
+            margin: .5em;
+            padding: .5em;
+
+            blockquote{
+                padding: .3em;
+                margin-bottom: 1em;
+                font-style: italic;
+            }
+
+            figcaption{
+                position: absolute;
+                left: 33%;
+                bottom: 0;
+                margin-bottom: .5em;
+                font-size: .9em;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: gray;
+            }
+        }
+
+        .glider-contain{
+            width: 90%;
+            padding-bottom: 2em;
+        }
+
+        .glider-next{
+            right: -50px;
+            top: 47%;
+            color: #f4f4f2;
+            // display: none;
+        }
+
+        .glider-prev{
+            left: -50px;
+            top: 47%;
+            color: #f4f4f2;
+            // display: none;
+        }
+    }
+
+    .srs{
+        padding: 2em;
+        text-align: center;
+
+        h2{
+            color:  #03506f;
+        }
+    }
+
+    .contact{
+        padding: 2em;
+        display: grid;
+        justify-content: space-around;
+        text-align: left;
+        background: #03506f;
+
+        h2, p{
+            color: #f4f4f2;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: .5em;
+        }
+
+        .name, .number, .email, .cost{
+            padding: .4em;
+            border: none;
+            background: whitesmoke;
+        }
+
+        .apply-btn{
+            display: block;
+            color: white;
+            background: black;
+            width: 100%;
+            padding: .8em;
+            margin-top: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    form{
+        p{
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+    p{
+        font-size: .7rem;
+        margin: 0;
+        padding: .3em;
+        color: gray;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+        li a{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            font-size: .7rem;
+            padding: 0 2em;
+            color: black;
+        }
+    }
+}
+
+// @media screen and (min-width: 750px){
+
+//     .wrapper{
+
+//         .main{
+    
+//             .ideas {
+//                 height: 20vh;
+//             }
+    
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 1000px){
+
+//     .wrapper{
+
+//         .main{
+    
+//             .ideas {
+//                 height: 25vh;
+//             }
+    
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 1300px){
+
+//     .wrapper{
+
+//         .main{
+    
+//             .ideas {
+//                 height: 30vh;
+//             }
+    
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 1900px){
+
+//     .wrapper{
+
+//         .main{
+    
+//             .ideas {
+//                 height: 35vh;
+//             }
+    
+//         }
+//     }
+// }
+
+@media screen and (max-width: 500px){
+
+    .wrapper{
+
+        .main{
+    
+            grid-template-columns: 1fr 1fr;
+
+            .ideas{
+                height: 20vh;
+            }
+    
+        }
+    }
+
+    .footer{
+        nav{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 775px){
+
+    .wrapper{
+
+        .main{
+
+            grid-template-columns: 1fr 1fr;
+    
+            .ideas{
+                height: 20vh;
+            }
+            
+        }
+    }
+
+
+    .footer{
+        nav{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .glider-next{
+        display: none;
+    }
+
+    .glider-prev{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    html{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    html{
+        font-size: 2rem;
+    }
+}

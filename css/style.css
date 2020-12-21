@@ -1,0 +1,365 @@
+html body {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  height: 100%;
+  background: #f4f4f2;
+}
+
+header {
+  position: relative;
+  z-index: 20;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #03506f;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  width: 85%;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: .7rem;
+  padding: 1em;
+  color: #f4f4f2;
+}
+
+.color {
+  color: #ffaf53;
+}
+
+.landing {
+  padding: 3em;
+  text-align: center;
+  background: #03506f;
+  color: #f4f4f2;
+}
+
+.landing h2 {
+  margin: 0;
+}
+
+.landing p {
+  margin: 0;
+  font-size: .8rem;
+}
+
+.wrapper {
+  width: 100%;
+  background: #f4f4f2;
+  text-align: center;
+}
+
+.wrapper a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.wrapper h2 {
+  color: #03506f;
+  margin: 0;
+}
+
+.wrapper p {
+  color: #03506f;
+  margin: 0;
+}
+
+.wrapper .main {
+  height: 100vh;
+  background: #f4f4f2;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wrapper .main h2 {
+  color: #03506f;
+}
+
+.wrapper .main .ideas {
+  padding: .5em;
+  height: 30vh;
+  margin: 1em 0;
+  width: 100%;
+}
+
+.wrapper .main .ideas h2 {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.wrapper .main .ideas p {
+  font-size: .8rem;
+}
+
+.wrapper .main .gym {
+  height: 100%;
+  width: 100%;
+  background: url("../images/gym.svg") no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.wrapper .main .phone {
+  height: 100%;
+  width: 100%;
+  background: url("../images/phone.svg") no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.wrapper .main .travel {
+  height: 100%;
+  width: 100%;
+  background: url("../images/travel.svg") no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.wrapper .main .gift {
+  height: 100%;
+  width: 100%;
+  background: url("../images/gift.svg") no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.wrapper .main .saving {
+  height: 100%;
+  width: 100%;
+  background: url("../images/saving.svg") no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.wrapper .main .netflix {
+  height: 100%;
+  width: 100%;
+  background: url("../images/netflix.svg") no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.wrapper .customer {
+  text-align: center;
+  background: #03506f;
+}
+
+.wrapper .customer h2 {
+  color: #f4f4f2;
+  padding-top: 1em;
+}
+
+.wrapper .customer figure {
+  position: relative;
+  background: #f4f4f2;
+  display: block;
+  margin: .5em;
+  padding: .5em;
+}
+
+.wrapper .customer figure blockquote {
+  padding: .3em;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+.wrapper .customer figure figcaption {
+  position: absolute;
+  left: 33%;
+  bottom: 0;
+  margin-bottom: .5em;
+  font-size: .9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+}
+
+.wrapper .customer .glider-contain {
+  width: 90%;
+  padding-bottom: 2em;
+}
+
+.wrapper .customer .glider-next {
+  right: -50px;
+  top: 47%;
+  color: #f4f4f2;
+}
+
+.wrapper .customer .glider-prev {
+  left: -50px;
+  top: 47%;
+  color: #f4f4f2;
+}
+
+.wrapper .srs {
+  padding: 2em;
+  text-align: center;
+}
+
+.wrapper .srs h2 {
+  color: #03506f;
+}
+
+.wrapper .contact {
+  padding: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: left;
+  background: #03506f;
+}
+
+.wrapper .contact h2, .wrapper .contact p {
+  color: #f4f4f2;
+}
+
+.wrapper .contact h2 {
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+.wrapper .contact .name, .wrapper .contact .number, .wrapper .contact .email, .wrapper .contact .cost {
+  padding: .4em;
+  border: none;
+  background: whitesmoke;
+}
+
+.wrapper .contact .apply-btn {
+  display: block;
+  color: white;
+  background: black;
+  width: 100%;
+  padding: .8em;
+  margin-top: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wrapper form p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.footer p {
+  font-size: .7rem;
+  margin: 0;
+  padding: .3em;
+  color: gray;
+}
+
+.footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer nav ul li a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: .7rem;
+  padding: 0 2em;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper .main {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .wrapper .main .ideas {
+    height: 20vh;
+  }
+  .footer nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .wrapper .main {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .wrapper .main .ideas {
+    height: 20vh;
+  }
+  .footer nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .glider-next {
+    display: none;
+  }
+  .glider-prev {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
