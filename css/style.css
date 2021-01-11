@@ -316,6 +316,33 @@ header nav ul li a {
   color: black;
 }
 
+#thanks {
+  display: none;
+}
+
+.thankyou {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  font-size: 2rem;
+  background: whitesmoke;
+}
+
+.thankyou .container {
+  text-align: center;
+  margin: auto;
+}
+
+.thankyou .container button, .thankyou .container a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  background: black;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 500px) {
   .wrapper .main {
     -ms-grid-columns: 1fr 1fr;

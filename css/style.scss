@@ -298,6 +298,32 @@ header{
     }
 }
 
+#thanks{
+    display: none;
+}
+
+.thankyou{
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    font-size: 2rem;
+    background: whitesmoke;
+
+    .container{
+        text-align: center;
+        margin: auto;
+
+        button, a{
+            text-decoration: none;
+            font-size: 2rem;
+            color: white;
+            background: black;
+            padding: 1em;
+            text-transform: uppercase;
+        }
+    }
+}
+
 // @media screen and (min-width: 750px){
 
 //     .wrapper{

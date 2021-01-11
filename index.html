@@ -196,7 +196,7 @@
                         <option value="20-50">$20-50/day</option>
                     </select>
                     <!-- <br> -->
-                    <button class="apply-btn" type="submit">Submit</button>
+                    <button class="apply-btn" type="submit" onclick="getElementById('thanks').style.display = 'block'">Submit</button>
                 </form>
         </section>
         <!-- <form method="post" autocomplete="off" name="google-sheet">
@@ -213,6 +213,16 @@
                 <input type="submit" name="submit" class="btnSubmit btn-block" value="Login" />
             </div>
         </form> -->
+    </div>
+    
+    <div id="thanks">
+    <section class="thankyou">
+        <div class="container">
+            <h2>Thank You!</h2>
+            <h3>Our Friendly Staff Will Assist You Soon</h3>
+            <button onclick="getElementById('thanks').style.display='none'">Submit Another Form</button>
+        </div>
+    </section>
     </div>
 
     <footer class="footer">
@@ -232,13 +242,14 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzbt_jDKQ8jKVS68ywF9ANEOJToGRIEgwWdm1fhzM6C5sDmBW8/exec'
         const form = document.forms['google-sheet']
       
-        form.addEventListener('submit', e => {
+        form.addEventListener('submit',e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => document.getElementById('form').reset())
             .catch(error => console.error('Error!', error.message))
+            return document.location.hash = '#thanks';
         })
-      </script>
+    </script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
